@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Crypto Portfolio App</h1>
+      <h1 className="MainTitle">Crypto Portfolio App</h1>
       <WalletConnect onConnect={handleWalletConnect}/>
       {account && provider && (
         <WatchList provider = {provider} account={account}/>

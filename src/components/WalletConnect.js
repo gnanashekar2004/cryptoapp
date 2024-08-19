@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { ethers } from 'ethers';
 
+import './WalletConnect.css';
+
 const WalletConnect = ({onConnect}) => {
     const [currentAccount, setCurrentAccount] = useState(null);
     const [provider,setProvider]=useState(null);
@@ -23,11 +25,11 @@ const WalletConnect = ({onConnect}) => {
     };
 
     return(
-        <div>
+        <div className="buttonContainer">
             {!currentAccount ? (
-                <button onClick={connectWallet}>Connect Wallet</button>
+                <button className="connectButton" onClick={connectWallet}>Connect Wallet</button>
             ):(
-                <p>Connected Account: {currentAccount}</p>
+                <p className="accountNo"><span>Connected Account:</span> {currentAccount}</p>
             )}
         </div>
     );

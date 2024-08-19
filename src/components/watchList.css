@@ -1,0 +1,62 @@
+.watchList{
+    padding: 5vh 10vw 0 10vw;
+}
+
+.Addtoken{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2vh 0;
+}
+
+.Addtoken input{
+    width: 60vw;
+    height: 5vh;
+    border-radius: 5px;
+    border: 1px solid #f5f5f5;
+    padding: 0 1vw;
+}
+
+.Addtoken button{
+    background-color: #283db2;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.Addtoken button:hover{
+    background-color: #33B864;
+}
+
+.tablewatchlist{
+    display: flex;
+    justify-content: center;
+}
+
+.watchlist-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.watchlist-table th, .watchlist-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.watchlist-table th {
+    background-color: #000000;
+    color: white;
+}
+
+.watchlist-table tr:nth-child(even) {
+    background-color: #003e6a;
+}
