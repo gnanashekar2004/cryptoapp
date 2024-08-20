@@ -1,0 +1,39 @@
+.historyHeading{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.historyHeading span{
+    color: rgb(4, 87, 232);
+    padding-left: 3px;
+}
+
+.date-picker-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.datePicker{
+    width: 15vw;
+    height: 3vh;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    border: solid grey 1px;
+}
+
+.date-picker-container button{
+    color: white;
+    background-color: rgb(4, 87, 232);
+    border-radius: 10px;
+}
+
+.chart-container{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    height: 40vh;
+
+}

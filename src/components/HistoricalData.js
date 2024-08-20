@@ -5,6 +5,8 @@ import 'react-datepicker/dist/react-datepicker.css';
 import { generateMockHistoricalData } from '../utils/mockData';
 import { Chart } from 'chart.js';
 
+import './HistoricalData.css';
+
 function HistoricalData({ token }) {
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
@@ -50,15 +52,15 @@ function HistoricalData({ token }) {
 
     return (
         <div>
-            <h3>Historical Data for {token}</h3>
+            <h3 className="historyHeading">Historical Data for:<span>{token}</span></h3>
             <div className="date-picker-container">
                 {startDate && endDate && (
                     <>
-                        <DatePicker
+                        <DatePicker className="datePicker"
                             selected={startDate}
                             onChange={(date) => setStartDate(date)}
                         />
-                        <DatePicker
+                        <DatePicker className='datePicker'
                             selected={endDate}
                             onChange={(date) => setEndDate(date)}
                         />

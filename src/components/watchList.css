@@ -60,3 +60,8 @@
 .watchlist-table tr:nth-child(even) {
     background-color: #003e6a;
 }
+
+.historical-data-container{
+    margin-top: 20px;
+    height: 40vh;
+}
